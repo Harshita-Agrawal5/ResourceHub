@@ -1,24 +1,64 @@
-# Resource Hub
+# ResourceXchange
 
-Resource Hub is a web application that allows students to share and explore academic resources within their campus.
+## Problem Statement
+High-performance RAM resources are dominated by a few major cloud providers, making them costly and inaccessible for smaller users. Meanwhile, vast amounts of idle RAM in personal devices remain underutilized.
 
-## Features
-- Share academic resources
-- Browse resources shared by other students
-- Simple and user-friendly interface
+## Solution
+We are building a **decentralized computing platform** designed for individuals, small businesses, and developers. The platform enables affordable, flexible access to shared computing resources (RAM, GPU, storage) within a network. 
 
-## Tech Stack
-- Frontend: HTML, CSS, JavaScript
-- Backend: (add if applicable)
-- Database: (add if applicable)
+### Value Proposition
+- The platform allows users to share and monetize idle resources.
+- It offers a scalable and affordable alternative to traditional cloud services.
+- The platform supports **RAM pooling**, enabling high-memory tasks to be split across devices and run in parallel.
 
-## How to Run
-1. Clone the repository
-2. Install required dependencies
-3. Run the application
-4. Open it in a web browser
+# Project Setup: Virtual Environments and Dependencies
 
-## Future Improvements
-- User authentication
-- Search and filter functionality
-- Improved UI design
+This project utilizes virtual environments to manage dependencies and ensure a clean development environment. Here's how to set up and run your project:
+
+**1. Creating a Virtual Environment**
+
+We'll use Python's built-in `venv` module to create a virtual environment.
+
+**Steps:**
+
+1. Open a terminal window.
+2. Navigate to your project directory using `cd`.
+3. Run the following command to create a virtual environment named `my_env`:
+
+```
+python -m venv my_env
+```
+
+This creates a directory named `my_env` within your project, containing a self-contained Python installation and package management system.
+
+**2. Activating the Virtual Environment**
+
+**Windows:**
+
+- **Command Prompt:**
+   ```
+   my_env\Scripts\activate.bat
+   ```
+- **PowerShell:**
+   ```powershell
+   .\my_env\Scripts\Activate.ps1
+   ```
+
+**Linux/macOS:**
+   ```bash
+   source my_env/bin/activate
+   ```
+
+Your terminal prompt will change to indicate the active virtual environment (e.g., `(my_env)your_username@your_machine:~/project_directory$`).
+
+**3. Installing Dependencies from `requirements.txt`**
+
+Inside the activated virtual environment, run the following command to install all packages listed in `requirements.txt`:
+
+```
+pip install -r requirements.txt
+```
+
+This downloads and installs all listed packages within your virtual environment.
+  
+
